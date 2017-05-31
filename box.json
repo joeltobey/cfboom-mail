@@ -1,0 +1,41 @@
+{
+    "name":"CS Ops Mail Services",
+    "version":"1.0.0",
+    "author":"Joel Tobey <joel.tobey@domo.com>",
+    "slug":"csops-mail",
+    "type":"modules",
+    "homepage":"https://git.empdev.domo.com/client-services/csops-mail",
+    "documentation":"https://git.empdev.domo.com/client-services/csops-mail/wiki",
+    "repository":{
+        "type":"git",
+        "url":"https://git.empdev.domo.com/client-services/csops-mail"
+    },
+    "shortDescription":"CS Ops Mail Service",
+    "license":[
+        {
+            "type":"Domo",
+            "url":"http://www.domo.com/"
+        }
+    ],
+    "contributors":[
+        "Joel Tobey <joel.tobey@domo.com>"
+    ],
+    "engines":[
+        {
+            "type":"lucee",
+            "version":">4.5"
+        },
+        {
+            "type":"adobe",
+            "version":">9.02"
+        }
+    ],
+    "dependencies":{
+        "cfboom-lang":"1.0.0"
+    },
+    "ignore":[
+        "**/.*",
+        "tests",
+        "*/.md"
+    ]
+}
