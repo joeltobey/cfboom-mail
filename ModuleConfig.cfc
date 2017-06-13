@@ -48,7 +48,12 @@ component {
         // module settings - stored in modules.name.settings
         settings = {
             "debugEmail" = "your.email@mycompany.com",
-            "noReplyEmail" = "no_reply@mycompany.com"
+            "noReplyEmail" = "no_reply@mycompany.com",
+            "server" = "",
+            "port" = 25,
+            "useSSL" = false,
+            "username" = "",
+            "password" = ""
         };
 
         // Layout Settings
