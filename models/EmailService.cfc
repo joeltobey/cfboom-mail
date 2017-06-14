@@ -1,5 +1,7 @@
-component
-    singleton="true"
+/**
+ * Class EmailService
+ */
+component singleton
     extends="cfboom.lang.Object"
     displayname="Class EmailService"
     output="false"
