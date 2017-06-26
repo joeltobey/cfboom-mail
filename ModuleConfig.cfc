@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Joel Tobey <joeltobey@gmail.com>
+ * Copyright 2016-2017 Joel Tobey <joeltobey@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,9 +22,9 @@ component {
     // Module Properties
     this.title              = "cfboom-mail";
     this.author             = "Joel Tobey";
-    this.webURL             = "";
+    this.webURL             = "https://github.com/joeltobey/cfboom-mail";
     this.description        = "cfboom mail services.";
-    this.version            = "1.0.0";
+    this.version            = "0.9.0";
     // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
     this.viewParentLookup   = true;
     // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
@@ -40,48 +40,29 @@ component {
     // Module Dependencies
     this.dependencies       = [ "cfboom-lang" ];
 
-    function configure(){
-
-        // parent settings
-        parentSettings = {};
+    function configure() {
 
         // module settings - stored in modules.name.settings
         settings = {
             "debugEmail" = "your.email@mycompany.com",
-            "noReplyEmail" = "no_reply@mycompany.com"
+            "noReplyEmail" = "no_reply@mycompany.com",
+            "server" = "",
+            "port" = 25,
+            "useSSL" = false,
+            "username" = "",
+            "password" = ""
         };
 
-        // Layout Settings
-        layoutSettings = {
-            defaultLayout = ""
-        };
-
-        // datasources
-        datasources = {};
-
-        // SES Routes
-        routes = [];
-
-        // Custom Declared Points
-        interceptorSettings = {
-            customInterceptionPoints = ""
-        };
-
-        // Custom Declared Interceptors
-        interceptors = [];
-
-        // Binder Mappings
-        // binder.map("Alias").to("#moduleMapping#.model.MyService");
     }
 
     /**
      * Fired when the module is registered and activated.
      */
-    function onLoad(){}
+    function onLoad() {}
 
     /**
      * Fired when the module is unregistered and unloaded
      */
-    function onUnload(){}
+    function onUnload() {}
 
 }
