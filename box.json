@@ -1,8 +1,8 @@
 {
     "name":"cfboom Mail Services",
-    "version":"0.9.1",
+    "version":"0.9.2",
     "author":"Joel Tobey <joel.tobey@domo.com>",
-    "slug":"csops-mail",
+    "slug":"cfboom-mail",
     "type":"modules",
     "homepage":"https://github.com/joeltobey/cfboom-mail",
     "documentation":"https://github.com/joeltobey/cfboom-mail/wiki",
@@ -10,7 +10,7 @@
         "type":"git",
         "url":"https://github.com/joeltobey/cfboom-mail"
     },
-    "location":"https://github.com/joeltobey/cfboom-mail/releases/download/v0.9.1/cfboom-mail-v0.9.1.zip",
+    "location":"https://github.com/joeltobey/cfboom-mail/releases/download/v0.9.2/cfboom-mail-v0.9.2.zip",
     "shortDescription":"This module contains a standard service to send emails.",
     "license":[
         {
