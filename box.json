@@ -1,20 +1,20 @@
 {
-    "name":"CS Ops Mail Services",
-    "version":"1.0.0",
+    "name":"cfboom Mail Services",
+    "version":"0.9.0",
     "author":"Joel Tobey <joel.tobey@domo.com>",
     "slug":"csops-mail",
     "type":"modules",
-    "homepage":"https://git.empdev.domo.com/client-services/csops-mail",
-    "documentation":"https://git.empdev.domo.com/client-services/csops-mail/wiki",
+    "homepage":"https://github.com/joeltobey/cfboom-mail",
+    "documentation":"https://github.com/joeltobey/cfboom-mail/wiki",
     "repository":{
         "type":"git",
-        "url":"https://git.empdev.domo.com/client-services/csops-mail"
+        "url":"https://github.com/joeltobey/cfboom-mail"
     },
-    "shortDescription":"CS Ops Mail Service",
+    "shortDescription":"This module contains a standard service to send emails.",
     "license":[
         {
-            "type":"Domo",
-            "url":"http://www.domo.com/"
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
         }
     ],
     "contributors":[
