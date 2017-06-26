@@ -24,7 +24,7 @@ component {
     this.author             = "Joel Tobey";
     this.webURL             = "https://github.com/joeltobey/cfboom-mail";
     this.description        = "cfboom mail services.";
-    this.version            = "0.9.0";
+    this.version            = "0.9.1";
     // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
     this.viewParentLookup   = true;
     // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
