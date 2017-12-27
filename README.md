@@ -1,3 +1,5 @@
+[![Build Status](https://api.travis-ci.org/joeltobey/cfboom-mail.svg?branch=development)](https://travis-ci.org/joeltobey/cfboom-mail)
+
 # cfboom Mail Services
 This module contains a standard service to send emails.
 
