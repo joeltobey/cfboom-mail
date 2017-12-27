@@ -20,7 +20,7 @@ Just drop into your **modules** folder or use CommandBox to install
 The module registers the EmailService: `EmailService@cfboomMail` that encapsulates basic email functionality. Check out the API Docs for all the possible functions.
 
 ## Settings
-You'll need to set the default `debugEmail` and optionally the `noReplyEmail` in your `ColdBox.cfc` file under the `cfboomMail` struct of `moduleSettings`. Use the addition settings if you need:
+You'll need to set the default `debugEmail` and optionally the `noReplyEmail` in your `ColdBox.cfc` file under the `cfboomMail` struct of `moduleSettings`. Use the additional settings if you need:
 
 ```js
 moduleSettings = {
@@ -34,4 +34,29 @@ moduleSettings = {
     password = ""
   }
 };
+```
+
+## EmailService
+
+Wirebox mapping `EmailService@cfboomMail`
+
+```
+var EmailService = getInstance( "EmailService@cfboomMail" );
+var emailDomain = EmailService.getEmailDomain( emailAddress );
+
+try {
+
+  // do something
+
+} catch ( any ex ) {
+
+  // Send debug information now
+  var debugStruct = {};
+  debugStruct['ex'] = ex;
+  debugStruct['info'] = myInfo;
+  EmailService.sendDebugEmail( debugStruct, "Custom Error Subject" );
+
+  ... additional catch logic
+
+}
 ```

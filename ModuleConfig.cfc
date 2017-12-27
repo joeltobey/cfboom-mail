@@ -17,52 +17,53 @@
 /**
  * @author Joel Tobey
  */
-component {
+component
+  output="false"
+{
+  // Module Properties
+  this.title              = "cfboom-mail";
+  this.author             = "Joel Tobey";
+  this.webURL             = "https://github.com/joeltobey/cfboom-mail";
+  this.description        = "cfboom mail services.";
+  this.version            = "1.0.0";
+  // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
+  this.viewParentLookup   = true;
+  // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
+  this.layoutParentLookup = true;
+  // Module Entry Point
+  this.entryPoint         = "cfboom/mail";
+  // Model Namespace
+  this.modelNamespace     = "cfboomMail";
+  // CF Mapping
+  this.cfmapping          = "cfboom/mail";
+  // Auto-map models
+  this.autoMapModels      = true;
+  // Module Dependencies
+  this.dependencies       = [];
 
-    // Module Properties
-    this.title              = "cfboom-mail";
-    this.author             = "Joel Tobey";
-    this.webURL             = "https://github.com/joeltobey/cfboom-mail";
-    this.description        = "cfboom mail services.";
-    this.version            = "0.9.2";
-    // If true, looks for views in the parent first, if not found, then in the module. Else vice-versa
-    this.viewParentLookup   = true;
-    // If true, looks for layouts in the parent first, if not found, then in module. Else vice-versa
-    this.layoutParentLookup = true;
-    // Module Entry Point
-    this.entryPoint         = "cfboom/mail";
-    // Model Namespace
-    this.modelNamespace     = "cfboomMail";
-    // CF Mapping
-    this.cfmapping          = "cfboom/mail";
-    // Auto-map models
-    this.autoMapModels      = true;
-    // Module Dependencies
-    this.dependencies       = [ "cfboom-lang" ];
+  function configure() {
 
-    function configure() {
+    // module settings - stored in modules.name.settings
+    settings = {
+      "debugEmail" = "your.email@mycompany.com",
+      "noReplyEmail" = "no_reply@mycompany.com",
+      "server" = "",
+      "port" = 25,
+      "useSSL" = false,
+      "username" = "",
+      "password" = ""
+    };
 
-        // module settings - stored in modules.name.settings
-        settings = {
-            "debugEmail" = "your.email@mycompany.com",
-            "noReplyEmail" = "no_reply@mycompany.com",
-            "server" = "",
-            "port" = 25,
-            "useSSL" = false,
-            "username" = "",
-            "password" = ""
-        };
+  }
 
-    }
+  /**
+   * Fired when the module is registered and activated.
+   */
+  function onLoad() {}
 
-    /**
-     * Fired when the module is registered and activated.
-     */
-    function onLoad() {}
-
-    /**
-     * Fired when the module is unregistered and unloaded
-     */
-    function onUnload() {}
+  /**
+   * Fired when the module is unregistered and unloaded
+   */
+  function onUnload() {}
 
 }
