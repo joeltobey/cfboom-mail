@@ -1,0 +1,10 @@
+version: '3'
+services:
+  cfboom-mail:
+    build: .
+    image: cfboom/mail
+    container_name: cfboom-mail
+    ports:
+    - "8888:8888"
+    volumes:
+    - .:/var/www/modules_app/cfboom-mail

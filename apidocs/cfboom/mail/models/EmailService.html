@@ -144,19 +144,10 @@ Class
 	
 	
 
-	
-		
-		
-			
-		
-	
-	
-
 
 <!-- Inheritance Tree-->
 <pre style="background:white">lucee.Component
-    <img src="../../../resources/inherit.gif" alt="extended by ">cfboom.lang.Object
-      <img src="../../../resources/inherit.gif" alt="extended by ">cfboom.mail.models.EmailService
+    <img src="../../../resources/inherit.gif" alt="extended by ">cfboom.mail.models.EmailService
 </pre>
 
 
@@ -189,6 +180,8 @@ Class
 			
 			<li class="label label-danger label-annotations">
 				singleton 
+				
+				: true		
 				
 			</li>
 			&nbsp;
@@ -320,6 +313,8 @@ Class
 			<strong><a href="EmailService.html#getEmailDomain()">getEmailDomain</A></strong>(string email)
 			<br>
 			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the email domain from an email.
+			
 		</td>
 	</tr>
 	
@@ -332,6 +327,8 @@ Class
 		<td>
 			<strong><a href="EmailService.html#newMail()">newMail</A></strong>()
 			<br>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helper function to create a new mail service with.
 			
 		</td>
 	</tr>
@@ -346,6 +343,8 @@ Class
 			<strong><a href="EmailService.html#send()">send</A></strong>(string to, string subject, [string body=''], [struct argumentStruct='[runtime expression]'], [string type='html'], [string toName=''], [string from='[runtime expression]'], [string fromName=''], [string htmlPath=''], [string textPath=''], [string cc=''], [string bcc=''])
 			<br>
 			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Construct and send an email the same every time.
+			
 		</td>
 	</tr>
 	
@@ -359,6 +358,8 @@ Class
 			<strong><a href="EmailService.html#sendDebugEmail()">sendDebugEmail</A></strong>([struct argumentStruct='[runtime expression]'], [string subject='Uncaught Error'], [string to='[runtime expression]'], [string type='html'], [string toName=''], [string from='[runtime expression]'], [string fromName=''], [string body=''], [string htmlPath='/cfboom/mail/includes/email/html/debug.cfm'], [string textPath=''], [string cc=''], [string bcc=''])
 			<br>
 			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Helper function to pass a debug struct in with optional subject to dump it out to the debug email recipient.
+			
 		</td>
 	</tr>
 	
@@ -368,95 +369,6 @@ Class
 
 <a name="inherited_methods"><!-- --></a>
 
-
-	
-
-	
-
-	&nbsp;
-	<a name="methods_inherited_from_class_cfboom.lang.Object"><!-- --></a>
-	<table class="table table-hover table-bordered">
-		<tr class="info">
-			<th align="left">
-				<strong>Methods inherited from class <kbd>cfboom.lang.Object</kbd></strong>
-			</th>
-		</tr>
-		<tr>
-			<td>
-				
-				
-				
-					
-					
-					
-					
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-					
-					
-				
-					
-					
-					
-						
-					
-					
-					
-					
-				
-				
-				
-					<a href="../../../cfboom/lang/Object.html#$equals()">$equals</a>, <a href="../../../cfboom/lang/Object.html#getComponentName()">getComponentName</a>, <a href="../../../cfboom/lang/Object.html#getIdentityHashCode()">getIdentityHashCode</a>, <a href="../../../cfboom/lang/Object.html#getIdentityString()">getIdentityString</a>, <a href="../../../cfboom/lang/Object.html#getMeta()">getMeta</a>, <a href="../../../cfboom/lang/Object.html#hashCode()">hashCode</a>, <a href="../../../cfboom/lang/Object.html#toString()">toString</a>
-				
-			</td>
-		</tr>
-	</table>
 
 	
 
@@ -561,6 +473,9 @@ Class
 	<br><br>
 
 	
+		<p>Returns the email domain from an email. It does not do
+any validation on the email itself.</p>
+	
 
 	
 		
@@ -580,6 +495,11 @@ Class
 	
 
 	
+		<dl>
+			<dt><strong>Returns:</strong></dt>
+			<dd>the string after the "@" symbol in email.</dd>
+		</dl>
+	
 
 	</dl>
 	<hr>
@@ -592,6 +512,9 @@ Class
 	
 	<br><br>
 
+	
+		<p>Helper function to create a new mail service with
+the settings applied.</p>
 	
 
 	
@@ -617,6 +540,8 @@ Class
 	
 	<br><br>
 
+	
+		<p>Construct and send an email the same every time.</p>
 	
 
 	
@@ -671,6 +596,8 @@ Class
 	
 	<br><br>
 
+	
+		<p>Helper function to pass a debug struct in with optional subject to dump it out to the debug email recipient.</p>
 	
 
 	
