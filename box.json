@@ -36,5 +36,8 @@
         "**/.*",
         "tests",
         "*/.md"
-    ]
+    ],
+    "scripts":{
+        "postVersion":"package set location='https://github.com/joeltobey/cfboom-mail/releases/download/v`package version`/cfboom-mail-v`package version`.zip'"
+    }
 }
