@@ -40,7 +40,14 @@ component
    */
   public void function testGetEmailDomain() {
     assertEqualsCase( "mycompany.com", EmailService.getEmailDomain( "john.doe@mycompany.com" ) );
-    assertEqualsCase( "myCompany.com", EmailService.getEmailDomain( "john.doe@myCompany.com" ) );
+    assertEqualsCase( "", EmailService.getEmailDomain( "john.doe[at]myCompany.com" ) );
+  }
+
+  /**
+   * @Test
+   */
+  public void function testGetEmailUsername() {
+    assertEqualsCase( "john.doe", EmailService.getEmailUsername( "john.doe@mycompany.com" ) );
     assertEqualsCase( "", EmailService.getEmailDomain( "john.doe[at]myCompany.com" ) );
   }
 

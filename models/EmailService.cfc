@@ -168,6 +168,22 @@ component singleton="true"
   }
 
   /**
+   * Returns the email username from an email. It does not do
+   * any validation on the email itself.
+   *
+   * @return the string before the "@" symbol in email.
+   */
+  public string function getEmailUsername( required string email ) {
+    var emailLength = len( arguments.email );
+    var atIndex = find( "@", arguments.email );
+    if ( atIndex > 0 && atIndex < emailLength ) {
+      return left( arguments.email, atIndex - 1 );
+    } else {
+      return "";
+    }
+  }
+
+  /**
    * Helper function to create a new mail service with
    * the settings applied.
    */

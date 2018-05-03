@@ -1,6 +1,6 @@
 {
     "name":"cfboom Mail Services",
-    "version":"1.0.0",
+    "version":"1.0.1",
     "author":"Joel Tobey <joel.tobey@domo.com>",
     "slug":"cfboom-mail",
     "type":"modules",
@@ -10,7 +10,7 @@
         "type":"git",
         "url":"https://github.com/joeltobey/cfboom-mail"
     },
-    "location":"https://github.com/joeltobey/cfboom-mail/releases/download/v1.0.0/cfboom-mail-v1.0.0.zip",
+    "location":"https://github.com/joeltobey/cfboom-mail/releases/download/v1.0.1/cfboom-mail-v1.0.1.zip",
     "shortDescription":"This module contains a standard service to send emails.",
     "license":[
         {
